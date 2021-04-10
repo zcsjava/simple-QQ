@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity4">
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#00D4F1">
+        <Button
+            android:id="@+id/la4"
+            android:layout_marginTop="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/letfjiantou"
+            />
+        <ImageView
+            android:id="@+id/user_photo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/la4"
+            android:background="#FBF7F7"
+            android:src="@drawable/t0" />
+        <TextView
+            android:id="@+id/xiaoxi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="24sp"
+            android:textColor="#FDFCFC"
+            android:textStyle="bold"
+            android:text="消息" />
+        <TextView
+            android:id="@+id/lianxiren"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="24sp"
+            android:textColor="#FDFCFC"
+            android:textStyle="bold"
+            android:text="联系人"
+            android:visibility="invisible"/>
+        <TextView
+            android:id="@+id/dongtai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="24sp"
+            android:textColor="#FDFCFC"
+            android:textStyle="bold"
+            android:text="动态"
+            android:visibility="invisible"/>
+        <ImageView
+            android:id="@+id/menu_add"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/add" />
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_bar"
+        android:layout_marginTop="3dp"></FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#F4F4F0">
+        <Button
+            android:layout_marginLeft="40dp"
+            android:id="@+id/xx"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/x2"
+            android:drawablePadding="3dp"
+            android:gravity="center" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4C4A4A"
+            android:text="   联系人"
+            android:textSize="10dp"
+            android:layout_below="@+id/lxr"
+            android:layout_alignLeft="@id/lxr"/>
+        <Button
+            android:layout_marginLeft="185dp"
+            android:id="@+id/lxr"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/l1"
+            android:drawablePadding="3dp"
+            android:gravity="center" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4C4A4A"
+            android:text="     消息"
+            android:textSize="10dp"
+            android:layout_below="@+id/xx"
+            android:layout_alignLeft="@id/xx"/>
+        <Button
+            android:layout_marginLeft="325dp"
+            android:id="@+id/dt"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/d1"
+            android:drawablePadding="3dp"
+            android:gravity="center" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4C4A4A"
+            android:text="    动态"
+            android:textSize="10dp"
+            android:layout_below="@+id/dt"
+            android:layout_alignLeft="@id/dt"/>
+    </RelativeLayout>
+</RelativeLayout>
